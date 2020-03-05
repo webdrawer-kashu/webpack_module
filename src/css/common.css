@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@import 'ress.min.css';
+@import 'module.css';
+
+@custom-media --mobile (max-width: 750px);
+
+:root {
+    --color: red;
+}
+
+body {
+    border: 1px solid red;
+    color: var(--color);
+    background-color: #eee;
+    &:hover {
+        background-color: #fff;
+    }
+}
+
+
+
+@media (--mobile) {
+  body {
+      border: 1px solid blue;
+  }
+}
